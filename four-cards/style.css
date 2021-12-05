@@ -47,19 +47,19 @@ p{
 }
 
 .box-red {
-    border-top: 4px solid hsl(0, 78%, 62%);
+    border-top: 3px solid hsl(0, 78%, 62%);
 }
 
 .box-cyan {
-    border-top: 2px solid hsl(180, 62%, 55%);
+    border-top: 3px solid hsl(180, 62%, 55%);
 }
 
 .box-orange {
-    border-top: 2px solid hsl(34, 97%, 64%);
+    border-top: 3px solid hsl(34, 97%, 64%);
 }
 
 .box-blue {
-    border-top: 2px solid hsl(212, 86%, 64%);
+    border-top: 3px solid hsl(212, 86%, 64%);
 }
 
 .box-push{
