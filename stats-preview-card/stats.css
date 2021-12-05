@@ -181,4 +181,9 @@ strong {
         font-size: 25px;
         color: white;
     }
+
+    .attribution { 
+        font-size: 11px; text-align: center; 
+        margin-bottom: 40px;
+    }
 }
