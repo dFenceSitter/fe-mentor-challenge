@@ -17,7 +17,7 @@ body {
 
 .container {
     display: flex;
-    max-width: 1107px;
+    max-width: 80vw;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -114,6 +114,7 @@ small {
         display: flex;
         flex-direction: column;
         padding: 0 10px;
+        margin: 40px auto;
     }
 
     .hero-text {
@@ -128,7 +129,7 @@ small {
     margin-bottom: 20px;
     background-color: hsl(248, 32%, 49%);
     text-align: center;
-    padding: 15px 90px !important; 
+    padding: 15px 40px !important; 
     color: white;
 }
 
