@@ -113,7 +113,7 @@ small {
     .container {
         display: flex;
         flex-direction: column;
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     .hero-text {
@@ -135,5 +135,6 @@ small {
 
     .attribution {
         margin-top: 20px;
+        font-size: 11px;
     }
 }
