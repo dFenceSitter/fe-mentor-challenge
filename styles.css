@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +7,18 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Lexend Deca', sans-serif;
 }
 
 
 .cards {
     margin: 0 auto;
     max-width: 1000px;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Lexend Deca', sans-serif;
 }
 
 .card {
@@ -40,7 +43,7 @@ button{
     display: block;
     padding: 10px 30px;
     cursor: pointer;
-    background: #047aed;
+    background: hsl(216, 50%, 16%);
     color: #fff;
     border: none;
     height: 60px;
@@ -49,16 +52,19 @@ button{
 
 a {
     text-decoration: none;
+    font-family:'Lexend Deca', sans-serif;
     
 }
 
 .navbar {
-    background-color: #047aed;
+    background-color: hsl(216, 50%, 16%);
     color: #fff;
-    height: 70px;
-    margin-bottom: 40px;
-    font-size: 14px;
+    height: 80px;
     padding-left: 20px;
-    padding-top: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
   }
   
