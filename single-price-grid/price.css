@@ -150,4 +150,9 @@ button:hover {
         padding: 20px;
     }
 
+    .left, .right {
+        padding: 40px;
+    }
+    
+
 }
