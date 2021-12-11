@@ -76,6 +76,12 @@ button {
     background-color: var(--pink);
     color: #fff;
     margin-top: 35px;
+    transition: all ease-in-out 0.2s;
+}
+
+.hero-btn:hover, .hero-btn:focus {
+    background-color: hsla(322, 100%, 66%, 0.788);
+    outline: none;
 }
 
 nav {
@@ -83,6 +89,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+}
+
+.nav-btn {
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-btn:hover, .nav-btn:focus {
+    color: var(--very-dark-cyan);
+    outline: none;
 }
 
 .logo {
@@ -132,7 +147,7 @@ nav {
 .hero-text h1 {
     font-size: 40px;
     color: var(--very-dark-cyan);
-    font-weight: 800;
+    font-weight: 700;
     width: 90%;
     margin-bottom: 20px;
 }
@@ -178,7 +193,28 @@ li {
     cursor: pointer;
     width: 30px;
     height: 30px;
+    transition: all ease-in-out 0.2s;
 }
+
+.icons li:hover, .icons li:focus {
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    outline: none;
+}
+
+.details li {
+    display: flex;
+    align-items: center;
+}
+
+.detail-icon {
+    padding-right: 10px;
+}
+
+/* .details li:first-of-type {
+    width: 80%;
+} */
+
 
 footer {
     background-color: var(--very-dark-cyan);
@@ -189,12 +225,9 @@ footer {
     z-index: 0;
 }
 
-
-
-
-
-
-
+#footer-flex {
+    display: flex;
+}
 
 .attribution {
     margin-top: 80px;
@@ -216,4 +249,123 @@ footer {
     color: #fff; 
     font-weight: 700;
     cursor: pointer;
+}
+
+@media (max-width: 550px) {
+
+    .container {
+        text-align: center;
+        padding: 0;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .box p {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .box h3 {
+        padding-top: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero-text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-text h1 {
+        padding-right: 0;
+        font-size: 25px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    header {
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+
+    .icons li:last-of-type {
+        margin-right: 0;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .icon ul {
+        margin-bottom: 0;
+    }
+
+    .footer ul {
+        margin-bottom: 40px;
+    }
+
+    .attribution p {  
+        text-align: center; 
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 19.5px;
+    }
+    
+    .small-box{
+        padding: 30px
+    }
+
+     .footer {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+
+    button {
+        
+        font-size: 11px;
+        border-radius: 50px;
+        padding: 10px 40px;
+    }
+    
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .attribution {
+        margin-top: 0px;
+        z-index: 2;
+        position: relative;
+    }
+
+    
+
+/* .flex {
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+ } */
+
+
 }
