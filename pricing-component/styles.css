@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: hsl(240, 78%, 98%);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: hsl(232, 13%, 33%);
+}
+
+body::before {
+    content: '';
+    background-image: url(./images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    background-image: url(./images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 80vw;
+}
+
+.flex-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.toggle-container {
+    color: hsl(234, 14%, 74%);
+    margin-bottom: 20px;
+}
+
+.check {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    color: hsl(232, 13%, 33%);
+    margin-bottom: 20px;
+} 
+
+.box {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px hsla(234, 14%, 74%, 0.493);
+    margin: 20px;
+}
+
+.box p {
+    font-size: 4rem;
+    font-weight: 700;
+    width: 250px;
+}
+
+.box .monthly {
+    display: none;
+}
+
+.show-monthly .monthly {
+    display: block;
+}
+
+.show-monthly .annually {
+    display: none;
+}
+
+.box ul {
+    font-size: 14px;
+}
+
+.box ul li:first-of-type {
+    border-top: 1px solid hsl(234, 14%, 74%);
+}
+    
+.box ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+button {
+    background-image: linear-gradient(
+        to right,
+        hsl(236, 72%, 79%),
+        hsl(237, 63%, 64%)
+    );
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.premuim-box {
+    background-image: linear-gradient(
+        to right,
+        hsl(236, 72%, 79%),
+        hsl(237, 63%, 64%)
+    );
+    color: #fff;
+}
+
+.premuim-box button {
+    color: hsl(232, 13%, 33%);
+    background-color: #fff;
+    background-image: none;
+}
+
+.toggle-container label {
+    background-image: linear-gradient(
+        to right,
+        hsl(236, 72%, 79%),
+        hsl(237, 63%, 64%)
+    );
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 30px;
+    margin: 0 15px;
+    border-radius: 50px;
+    margin-bottom: 0;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-container input {
+    position: absolute;
+    left: -9999px;
+}
+
+.toggle-container label .ball {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform ease 0.4s;
+}
+
+.toggle-container input:checked + label .ball {
+    transform: translateX(39px);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 20px 0;
+}
+.attribution a { 
+    color: var(--cyan); 
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
