@@ -469,12 +469,16 @@ nav img {
 /* @media (max-width: 991px) */
 @media only screen and (max-device-width: 991px) {
 
+    h1 {
+        font-size: 1.625rem !important;
+    }
+
 .header-text h1 {
-    font-size: 26px !important;
+    font-size: 1.625rem !important;
 }
 
 .header-text p {
-    font-size: 14px !important;
+    font-size: 0.875rem !important;
 }
 
 
@@ -502,6 +506,7 @@ nav img {
 
 footer {
     font-size: 14px;
+    padding-bottom: 150px;
 }
 
 .container {
