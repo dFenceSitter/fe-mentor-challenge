@@ -257,6 +257,10 @@ footer {
     padding: 70px 0;
 }
 
+.container {
+    max-width: 90vw;
+}
+
 .footer-img {
     margin-bottom: 15px;
 }
