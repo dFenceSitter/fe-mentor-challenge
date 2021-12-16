@@ -466,8 +466,8 @@ nav img {
 
 
 
-
-@media (max-width: 991px) {
+/* @media (max-width: 991px) */
+@media only screen and (max-device-width: 991px) {
 
 .header-text h1 {
     font-size: 26px !important;
