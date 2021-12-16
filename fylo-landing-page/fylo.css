@@ -467,14 +467,14 @@ nav img {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
 
 .header-text h1 {
-    font-size: 26px;
+    font-size: 26px !important;
 }
 
 .header-text p {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 
