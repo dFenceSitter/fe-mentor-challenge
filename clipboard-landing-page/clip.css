@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+/* ### Primary */
+
+--strong-cyan: hsl(171, 66%, 44%);
+--light-blue: hsl(233, 100%, 69%);
+
+/* ### Neutral */
+
+--dark-greyish-blue: hsl(210, 10%, 33%);
+--greyish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-greyish-blue);
+}
+
+p {
+    color:var(--greyish-blue);
+    font-size: 15px;
+}
+
+button {
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 12px 25px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90vw;
+    text-align: center;
+}
+
+header {
+    background-image: url(./images/bg-header-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+header img {
+    margin-bottom: 30px;
+    width: 83.3px;
+    height: 83.3px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+header p {
+    width: 48%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+header button:first-of-type,
+.cta button:first-of-type {
+    background-color: var(--strong-cyan);
+    margin-right: 10px;
+    box-shadow: 0 5px 10px hsla(171, 66%, 44%, 0.4);
+}
+
+header button:last-of-type,
+.cta button:last-of-type {
+    background-color: var(--light-blue);
+    box-shadow: 0 5px 10px hsl(233, 100%, 69%, 0.4);
+}
+
+.header-2 h2 {
+    margin-bottom: 15px;
+}
+
+.header-2 p {
+    width: 52%;
+    margin: 0 auto;
+}
+
+.info-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.info-area > div {
+    flex: 1;
+}
+
+.info-area img {
+    width: 100%;
+}
+
+.computer-image {
+    margin-right: 50px;
+}
+
+.info-area-text {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.info-area-text p {
+    width: 70%;
+}
+
+.header-3 p {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.header-3 h2 {
+    margin-bottom: 15px;
+}
+
+.header-3 img {
+    width: 754.1px;
+    height: 476.1px;
+}
+
+.workflow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workflow-card {
+    width: 33.3%;
+    line-height: 2;
+}
+
+.workflow-card p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.workflow-card img {
+    margin-bottom: 30px;
+}
+
+.sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.sponsor img {
+    width: 50%;
+}
+
+.sponsor > div {
+    flex: 1;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: hsla(202, 11%, 66%, 0.116);
+    padding: 30px 0;
+    color: var(--greyish-blue);
+}
+
+.footer-link {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+/* .main-link {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .footer-link ul {
+    margin-right: 70px;
+} */
+
+.footer-link img {
+    width: 62.5px;
+    height: 62.5px;
+}
+
+.social-icons {
+    display: flex;
+    font-size: 25px;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
